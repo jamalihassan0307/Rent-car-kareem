@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Cars - Car Rental Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <main class="cars-container">
+      <div class="cars-header">
+        <h1>Available Cars</h1>
+        <div id="adminControls" style="display: none">
+          <button class="add-car-btn" onclick="openAddCarModal()">
+            <i class="fas fa-plus"></i> Add New Car
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="search-box">
+        <input type="text" placeholder="Search for a car" id="carSearch" />
+      </div> -->
+
+      <div class="cars-grid" id="carsGrid">
+        <!-- Cars will be dynamically inserted here -->
+      </div>
+    </main>
+
+    <!-- Add Car Modal -->
+    <div id="carModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">Add New Car</h2>
+        <form id="carForm">
+          <input type="hidden" id="carId" />
+          <div class="form-group">
+            <label for="name">Car Name</label>
+            <input
+              type="text"
+              id="name"
+              required
+              placeholder="Enter car name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="price">Price per Day</label>
+            <input
+              type="number"
+              id="price"
+              required
+              placeholder="Enter price"
+            />
+          </div>
+          <div class="form-group">
+            <label for="image">Image URL</label>
+            <input
+              type="text"
+              id="image"
+              required
+              placeholder="Enter image URL"
+            />
+          </div>
+          <div class="form-group">
+            <label for="model">Model Year</label>
+            <input
+              type="text"
+              id="model"
+              required
+              placeholder="Enter model year"
+            />
+          </div>
+          <div class="form-group">
+            <label for="transmission">Transmission</label>
+            <select id="transmission" required>
+              <option value="">Select transmission</option>
+              <option value="Automatic">Automatic</option>
+              <option value="Manual">Manual</option>
+              <option value="Electric">Electric</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mileage">Mileage</label>
+            <input
+              type="text"
+              id="mileage"
+              required
+              placeholder="Enter mileage"
+            />
+          </div>
+          <button type="submit" class="submit-btn">Save Car</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i>+92 3103707039</p>
+            <p><i class="fas fa-envelope"></i> kareem@gmail.com</p>
+          </div>
+          <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Car Rental Service. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Debug check for modal functionality
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("carModal");
+        const addButton = document.querySelector(".add-car-btn");
+        const form = document.getElementById("carForm");
+
+        console.log("Modal element:", modal);
+        console.log("Add button:", addButton);
+        console.log("Form element:", form);
+
+        if (addButton) {
+          addButton.addEventListener("click", () => {
+            console.log("Add button clicked");
+          });
+        }
+
+        if (form) {
+          form.addEventListener("submit", (e) => {
+            console.log("Form submitted");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
