@@ -60,9 +60,9 @@ A modern car rental platform that allows users to browse, book, and manage premi
 ### Contact Features
 
 <div align="center">
-  <img src="screenshots/contact.jpg" alt="Contact Page" width="400"/>
-  <img src="screenshots/contact1.png" alt="Contact Form" width="400"/>
-  <img src="screenshots/contact2.png" alt="Contact Info" width="400"/>
+  <img src="screenshots/contact.png" alt="Contact Header" width="400"/>
+  <img src="screenshots/contact-form.png" alt="Contact Message Form" width="400"/>
+  <img src="screenshots/contact-info.png" alt="Contact Information Cards" width="400"/>
   <p><em>Get in touch with our team</em></p>
 </div>
 
