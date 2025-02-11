@@ -4,7 +4,7 @@
 </div>
 
 <p align="center">
-    <a href="https://jamalhassan0307.github.io/Rent-a-Car/" target="_blank">
+    <a href="https://jamalihassan0307.github.io/Rent-car-kareem" target="_blank">
         <img alt="" src="https://img.shields.io/badge/Website-EA4C89?style=normal&logo=dribbble&logoColor=white" style="vertical-align:center" />
     </a>
 </p>
@@ -78,12 +78,14 @@ A modern car rental platform that allows users to browse, book, and manage premi
 ### Admin Account
 
 - Email: admin@gmail.com
-- Password: admin123
+- Password: 1234
+- Role: Administrator
 
 ### Demo User Account
 
-- Email: user@gmail.com
-- Password: user123
+- Email: demo@gmail.com
+- Password: 1234
+- Role: User
 
 ## 🚀 Key Features
 
