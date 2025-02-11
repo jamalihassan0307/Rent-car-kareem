@@ -119,3 +119,10 @@ A modern car rental platform that allows users to browse, book, and manage premi
 - Contact form
 
 ## Project Structure
+
+## 🙏 Acknowledgments
+
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [MockAPI](https://mockapi.io/) for backend services
